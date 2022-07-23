@@ -1,0 +1,55 @@
+PUT========
+
+/* UpdateBookById */
+	http://localhost:8080/admin/updateBookById/{Id}
+
+******************************************************************************************************************************
+	
+POST======
+
+/* AddBook */
+	http://localhost:8080/admin/addBook
+		
+		{
+           "bookId": 1,
+           "bookName": "sjhy",
+           "price": 200,
+           "author": {
+           "authorId": 3,
+           "authorName": "jfhf"
+        },
+        "category": {
+        "categoryId": 2,
+        "category": "nfh"
+         },
+         "rating": 2
+     }
+*********************************************************************************************************************************	
+
+/* AddCategory */
+	http://localhost:8080/admin/addCategory
+		
+		{
+               "categoryId": 1,
+               "category": "horror"
+        }
+	
+************************************************************************************************************************************	
+
+/* AddAuthorByAuthorName */
+	http://localhost:8080/admin/addAuthorByAuthorName
+		
+		{
+           "authorId": 2,
+            "authorName": "string"
+        }
+	
+*****************************************************************************************************************************	
+
+/*  DELETE */
+
+DeleteBookById
+	http://localhost:8080/admin/deleteBookById/{id}
+	
+	
+	
